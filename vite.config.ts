@@ -93,7 +93,7 @@ export default defineConfig({
           debugProtectionInterval: 1000, // 以毫秒为单位的间隔在“控制台”选项卡上强制使用调试模式，从而更难使用开发人员工具的其他功能
           // disableConsoleOutput: true, // 禁用console的使用，并将它们替换为空函数。这使得调试器的使用更加困难
 
-          domainLock: ["www.muxicat.com"], // 只允许在特定域和/或子域上运行经过模糊处理的源代码。这使得某人很难复制和粘贴您的源代码并在其他地方运行它
+          domainLock: [], // 只允许在特定域和/或子域上运行经过模糊处理的源代码。这使得某人很难复制和粘贴您的源代码并在其他地方运行它
           domainLockRedirectUrl: 'about:blank', // 如果源代码未在 domainLock 指定的域上运行，则允许将浏览器重定向到传递的 URL
           forceTransformStrings: [], // 启用字符串文本的强制转换，这些文本与传递的 RegExp 模式匹配
 
